@@ -98,5 +98,5 @@ if [[ $GRID_WATTS -ge 2500 ]]; then PREFIX=$RED; fi;
 SOLAR_WATTS=$(_get_entity_state "$ENTITY_SOLAR_POWER") # Returns Watts
 SOLAR_KWATTS=$(_calculate "$SOLAR_WATTS/1000")
 
-echo "☀️ $SOLAR_WATTS ⚡${PREFIX} $GRID_KWATTS"
+echo "☀️ $SOLAR_WATTS ⚡${PREFIX} $GRID_WATTS"
 
